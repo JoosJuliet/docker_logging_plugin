@@ -1,0 +1,5 @@
+FROM  golang:1.7
+
+COPY . /go/src/github.com/NAVER-CAMPUS-HACKDAY/dockerloggingdriver
+RUN cd /go/src/github.com/NAVER-CAMPUS-HACKDAY/dockerloggingdriver && go get
+RUN rm -rf /go/src/github.com/NAVER-CAMPUS-HACKDAY/dockerloggingdriver
